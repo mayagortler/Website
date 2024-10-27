@@ -1,4 +1,4 @@
-﻿body {
+body {
     direction: rtl;
     font-family: Heebo;
     background-color: #FFFCF9;
@@ -86,7 +86,7 @@ nav ul li:hover > .dropdown {
     margin-right: 20px; 
 }
 
-img {
+#livingRoomHeader {
     width: 1000px;
     height: auto;
 }
