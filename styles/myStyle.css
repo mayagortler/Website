@@ -1,0 +1,462 @@
+﻿body {
+    direction: rtl;
+    font-family: Heebo;
+    background-color: #FFFCF9;
+}
+
+#container {
+    color: #344D3C;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%; 
+    background-color: #A8B89F;
+    padding: 10px 0; 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    position: relative;
+}
+
+
+nav ul li a {
+    display: block;
+    color: white;
+    width: 150px;
+    height: 40px;
+    line-height: 40px; 
+    text-decoration: none;
+    text-align: center;
+    background-color: inherit; 
+    transition: color 0.3s; 
+}
+
+    nav ul li a:hover {
+        color: #f0a500; 
+
+
+.dropdown {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+
+nav ul li:hover > .dropdown {
+    display: block;
+}
+
+
+.dropdown li a {
+    padding: 10px 15px;
+    color: #333;
+    text-align: left;
+}
+
+    .dropdown li a:hover {
+        background-color: #ddd;
+    }
+ 
+
+.logo {
+    width: 50px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+img {
+    width: 1000px;
+    height: auto;
+}
+
+h2{
+    text-align:right;
+    font-size: 20px;
+}
+
+.button {
+    font-family: Heebo;
+    background-color: #A8B89F;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#firstP {
+    background-color: #A8B89F; 
+    color: white;
+    width: auto;
+    height: 100px;
+    padding: 35px;
+}
+
+.rightSide{
+    padding-left:500px;
+    text-align: right;
+}
+
+#whatIs {
+    padding: 50px;
+}
+
+#advantages {
+    background-color: #FBF6F1;
+    padding: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+}
+
+#startJourney {
+    padding: 50px;
+}
+
+
+.advantagesCards {
+    background-color: #FFFCF9;
+    width: 150px;
+    height: 200px;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center; 
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+
+.imageCards {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 10px; 
+}
+
+.JCards {
+    background-color: #FFFCF9;
+    width: 200px;
+    height: 300px;
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.journeyImage {
+    width: 150px;
+    height: 200px;
+    border-top-left-radius: 265px;
+    border-top-right-radius: 265px;
+}
+
+#aboutUs {
+    padding: 50px;
+    text-align: center;
+}
+
+    #aboutUs h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    #aboutUs .rightSide {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+
+#opinionsTable {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: separate; 
+    border-spacing: 20px; 
+}
+
+
+    #opinionsTable td {
+        padding: 20px;
+        font-size: 18px;
+        line-height: 1.8;
+        text-align: center;
+        color: #333;
+    }
+
+    #opinionsTable tr:nth-child(odd) td {
+        background-color: #FBF6F1; 
+    }
+
+    #opinionsTable tr:nth-child(even) td {
+        background-color: #f1ece6; 
+    }
+
+
+.names {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    text-align: center; 
+}
+
+
+#opinionsTable tr:hover td {
+    background-color: #e0dacd !important;
+}
+
+.aboutContent {
+    text-align: right;
+}
+
+#hitLogo {
+    width: 150px;
+    height: 150px;
+}
+
+form {
+    display: block;
+    align: right;
+    text-align: right;
+    color: rgb(255, 255, 255);
+}
+
+#form {
+    padding: 50px 200px;
+    background-color: #344D3C;
+    border-radius: 5px;
+}
+
+#formSumbitBtn {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 80px
+}
+
+.guideImg{
+    width: 150px;
+    height: 150px;
+}
+
+#guidesCard table {
+    width: 100%;
+    border-spacing: 20px; 
+}
+
+.card {
+    background-color: #E8E4D1;
+    width: 200px;
+    height: 250px;
+    margin: 15px;
+    padding: 15px; 
+    text-emphasis-style: bold;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.guideImg {
+    width: 200px; 
+    height: 200px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5%; 
+    object-fit: cover;
+}
+
+    
+    .card p {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.4;
+}
+
+#footer {
+    background-color: #344D3C;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    align-items: self-end;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: space-between; 
+    max-width: 800px;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    gap: 100px;
+}
+
+    footer .footer-links ul {
+       display: flex;
+       flex-direction: column;
+        padding: 10px;
+        list-style-type: none;
+        text-align: right;
+    }
+
+    footer .footer-links li {
+        margin-bottom: 20px; 
+    }
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+    footer a:hover {
+        color: #f0a500;
+        text-decoration: underline;
+    }
+
+footer .small-text {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#map {
+    text-align: center;
+}
+
+    #map h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+#siteMap {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+    #siteMap th {
+        background-color: #A8B89F;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        line-height: 2;
+        font-weight: bold;
+    }
+
+    #siteMap td {
+        height: 300px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        vertical-align: middle; 
+    }
+
+        #siteMap td ul {
+            list-style-type: none; 
+            padding: 0;
+            margin: 0;
+        }
+
+            #siteMap td ul li {
+                line-height: 1.8;
+                text-align: center;
+            }
+
+
+
+#maintext {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    line-height: 1.8; 
+    color: #333; 
+}
+
+ #maintext h2 {
+        color: #6B4226; 
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #A8B89F; 
+        padding-bottom: 5px;
+  }
+
+    #maintext p {
+        margin-bottom: 15px;
+        font-size: 1em;
+        color: #444;
+    }
+
+.rightSide {
+    text-align: right; 
+}
+
+.item-list {
+    list-style-type: none;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+    .item-list li {
+        margin-bottom: 15px;
+        font-size: 1em;
+        text-align: right;
+    }
+
+     
+       .item-list li strong {
+            color: #6B4226;
+            font-weight: bold;
+        }
+
+nav ol li{
+    display:inline-block;
+
+}
+
+nav ol li:after{
+    content:">";
+
+}
+
+nav ol li:last-child:after{
+    content:"";
+
+}

@@ -1,0 +1,93 @@
+﻿body {
+    direction: rtl;
+    font-family: Heebo;
+    background-color: #FBF6F1;
+}
+
+#container {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#pangOfficeForm {
+    background-color: #F4E6D8;
+    width: 40%;
+    border: 5px dashed black;
+    padding: 10px;
+    margin: 25px;
+    flex: 1;
+}
+
+h1{
+    text-align:center;
+    font-size: 25px;
+}
+
+#send {
+    background-color: #A8B89F;
+    font-family: Heebo;
+    opacity: 0.3;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    cursor: default;
+}
+
+#send.selected {
+    background-color: #A8B89F;
+    font-family: Heebo;
+    opacity: 1;
+}
+
+
+#userDesk {
+    width: 60%;
+    height: 650px;
+    border: 5px solid black;
+    background-color: #FBF5EF;
+    margin: 40px;
+    padding: 5px;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+h2{
+    padding-right: 20px;
+}
+
+
+.itemPic {
+    max-width:auto;
+    height: auto;
+    max-width: 100px;
+    margin-right:10px;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.itemPic.selected {
+        max-width: auto;
+        height: auto;
+        max-width: 100px;
+        margin-right: 10px;
+        opacity: 1;
+}
+
+th,td{
+    width: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+#deskPlace {
+    height: 300px;
+    text-align: center;
+}
+
+#deskImage{
+    width: 500px;
+}
+
+

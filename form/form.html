@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body onload="load()">
+    <div id="container">
+        <form id="pangOfficeForm">
+            <h1>סדר את שולחן העבודה שלך לפי שיטת הפנג שווי</h1>
+            <label>
+                <input type="text" id="name" placeholder="מהו שמך?" />
+                <br />
+                <br />
+            </label>
+            <lable>
+                <span>בחר את סוג השולחן שלך:</span>
+                <br />
+                <input type="radio" id="metal" name="desk" value="שולחן מתכת" onclick="enableSend()" /> שולחן מתכת
+                <br />
+                <input type="radio" id="wood" name="desk" value="שולחן עץ" onclick="enableSend()" /> שולחן עץ
+                <br />
+                <input type="radio" id="plastic" name="desk" value="שולחן פלסטיק" onclick="enableSend()" /> שולחן פלסטיק
+                <br />
+                <input type="radio" id="iron" name="desk" value="שולחן ברזל" onclick="enableSend()" /> שולחן ברזל
+                <br />
+                <br />
+            </lable>
+            <label>
+                <span>בחר את הפריטים שנמצאים לך על שולחן העבודה:</span>
+                <br />
+                <input type="checkbox" id="computer" name="items" value="מחשב" /> מחשב
+                <br />
+                <input type="checkbox" id="lamp" name="items" value="מנורה" /> מנורה
+                <br />
+                <input type="checkbox" id="plant" name="items" value="צמח" /> צמח
+                <br />
+                <input type="checkbox" id="pens" name="items" value="כלי לעטים" /> כלי לעטים
+                <br />
+                <input type="checkbox" id="books" name="items" value="ספרים" /> ספרים
+                <br />
+                <input type="checkbox" id="clock" name="items" value="שעון" /> שעון
+                <br />
+                <br />
+            </label>
+            <label>
+                <input type="button" id="send" value="עצב את השולחן שלך" onclick="fullForm()" />
+            </label>
+        </form>
+        <div id="userDesk">
+            <table>
+                <tr>
+                    <th colspan="4">
+                        <h2>שולחן העבודה של:</h2>
+                    </th>
+                    <th colspan="2">
+                        <div id="userName"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <td><img id="computerImg" class="itemPic" src="images/2x/computer@2x.png" alt="מחשב" /></td>
+                    <td> <img id="lampImg" class="itemPic" src="images/2x/lamp@2x.png" alt="מנורה" /></td>
+                    <td><img id="plantImg" class="itemPic" src="images/2x/plant@2x.png" alt="צמח" /></td>
+                    <td> <img id="pensImg" class="itemPic" src="images/2x/pens@2x.png" alt="כלי לעטים" /></td>
+                    <td><img id="booksImg" class="itemPic" src="images/2x/books@2x.png" alt="ספרים" /></td>
+                    <td><img id="clockImg" class="itemPic" src="images/2x/clock@2x.png" alt="שעון" /></td>
+                </tr>
+                <tr id="deskPlace">
+                    <td colspan="6" rowspan="6"><img id="deskImage" src="" alt="תמונה של השולחן תופיע כאן" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="textsum"></div>
+</body>
+</html>
+
